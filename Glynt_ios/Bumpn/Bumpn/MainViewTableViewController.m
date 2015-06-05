@@ -661,7 +661,6 @@
             [self.tableView beginUpdates];
             [self.tableView endUpdates];
             
-#warning trigger 4 upvote animation
             [self bump:indexPath];
             //PFObject *postObject = ((PFObject*)((RetrievedPost*)_postsInRange[indexPath.row]).postObject);
             long val = [[postObject valueForKey:@"points"] integerValue];
@@ -838,7 +837,6 @@
     return bView;
 }
 
-#warning SET UPVOTE ANIMATION
 // upvote animation goes here
 - (void)bump:(NSIndexPath*)indexPath {
     MainViewCell *cell = (MainViewCell*)[self.tableView cellForRowAtIndexPath:indexPath];
