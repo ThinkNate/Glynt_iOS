@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DTDBumpnB">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bumpn_top_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Csh-lk-0dk">
+                    <rect key="frame" x="2" y="27" width="37" height="26"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bumpn_arrowTail.png" translatesAutoresizingMaskIntoConstraints="NO" id="cfv-eb-f1G">
+                    <rect key="frame" x="15" y="48" width="10" height="12"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bumpn_bottom_B.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yeg-bP-k9O">
+                    <rect key="frame" x="10" y="55" width="48" height="40"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-Lb-XoO">
+                    <rect key="frame" x="0.0" y="0.0" width="58" height="100"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="bumpBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="C0A-kQ-HzR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bumpBot" destination="Yeg-bP-k9O" id="y5a-68-CdS"/>
+                <outlet property="bumpBtn" destination="bhO-Lb-XoO" id="hiS-4g-R7D"/>
+                <outlet property="bumpMid" destination="cfv-eb-f1G" id="ewC-u0-mOJ"/>
+                <outlet property="bumpTop" destination="Csh-lk-0dk" id="HPt-rA-9Sy"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="bumpn_arrowTail.png" width="151" height="82"/>
+        <image name="bumpn_bottom_B.png" width="596" height="621"/>
+        <image name="bumpn_top_arrow.png" width="390" height="347"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
